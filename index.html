@@ -468,6 +468,21 @@
                     <use href="./images/icons.svg#finish"></use>
                     </svg>
             </button>
+            <form class="modal-form">
+              <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+              <label class="modal-text" for="name">Имя</label>
+              <input class="modal-input" type="text" name="user-name" id="name">
+              <label class="modal-text" for="phone">Телефон</label>
+              <input class="modal-input" type="tel" name="telephone" id="phone">
+              <label class="modal-text" for="mail">Почта</label>
+              <input class="modal-input" type="email" name="user-mail" id="mail">
+              <label class="modal-text" for="comment">Комментарий</label>
+              <textarea class="modal-input comment" name="user-comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+              <input type="checkbox" name="contract" id="contract">
+              <label class="checkbox-text" for="contact">Соглашаюсь с рассылкой и принимаю</label>
+              <a href="" target="blank" class="checkbox-link">Условия договора</a>
+              <button type="submit" class="btn-send">Отправить</button>
+            </form>
           </div>
         </div>
      <script src="./js/modal.js"></script>
