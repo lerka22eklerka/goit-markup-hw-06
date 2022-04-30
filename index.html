@@ -385,57 +385,41 @@
     </main>
     <footer class="footer">
       <div class="container scl-footer">
-        <div class="part-adress">
-        <a class="logo" href="index.html">
-          <span class="logo-span">Web</span
-          ><span class="logo-studio">Studio</span>
-        </a>
-        <address class="address">
-          <ul class="address-list">
-            <li class="address-item">
-              <a
-                class="address-maps"
-                href="https://goo.gl/maps/abKfRASXcLubcDst8"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="address-item">
-              <a class="address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address-item">
-              <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
-        <div class="icon-social">
-          <h3 class="two-title">Присоединяйтесь</h3>
-          <ul class="comand-scl">
-              <li class="scl-list">
-                <a class="scl-link" href="">
-                  <svg class="scl-icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram">
-                  </use>
-                  </svg>
-                </a>
-              </li>
-              <li class="scl-list">
-                <a class="scl-link" href="">
-                  <svg class="scl-icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-twitter">
-                  </use>
-                  </svg>
-                </a>
-              </li>
-              <li class="scl-list">
+          <div class="part-adress">
+            <a class="logo" href="index.html">
+              <span class="logo-span">Web</span
+              ><span class="logo-studio">Studio</span>
+            </a>
+              <address class="address">
+                <ul class="address-list">
+                  <li class="address-item">
+                    <a
+                      class="address-maps"
+                      href="https://goo.gl/maps/abKfRASXcLubcDst8"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      г. Киев, пр-т Леси Украинки, 26</a
+                    >
+                  </li>
+                  <li class="address-item">
+                    <a class="address-link" href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="address-item">
+                    <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+          </div>
+          <div class="icon-social">
+            <h3 class="two-title">Присоединяйтесь</h3>
+            <ul class="comand-scl">
+                <li class="scl-list">
                   <a class="scl-link" href="">
                     <svg class="scl-icon" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-facebook">
+                    <use href="./images/icons.svg#icon-instagram">
                     </use>
                     </svg>
                   </a>
@@ -443,13 +427,29 @@
                 <li class="scl-list">
                   <a class="scl-link" href="">
                     <svg class="scl-icon" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-linkedin2">
+                    <use href="./images/icons.svg#icon-twitter">
                     </use>
                     </svg>
                   </a>
                 </li>
-            </ul>
-        </div>
+                <li class="scl-list">
+                    <a class="scl-link" href="">
+                      <svg class="scl-icon" width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook">
+                      </use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="scl-list">
+                    <a class="scl-link" href="">
+                      <svg class="scl-icon" width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin2">
+                      </use>
+                      </svg>
+                    </a>
+                  </li>
+              </ul>
+          </div>    
         <form class="subscribe">
           <h3 class="two-title">Подпишитесь на рассылку</h3>
           <input class="subscribe-mail" type="email" name="mail" id="mail" placeholder="E-mail">
@@ -460,6 +460,7 @@
               </svg>
           </button>
         </form>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
           <div class="modal">
@@ -470,18 +471,52 @@
             </button>
             <form class="modal-form">
               <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-              <label class="modal-text" for="name">Имя</label>
-              <input class="modal-input" type="text" name="user-name" id="name">
-              <label class="modal-text" for="phone">Телефон</label>
-              <input class="modal-input" type="tel" name="telephone" id="phone">
-              <label class="modal-text" for="mail">Почта</label>
-              <input class="modal-input" type="email" name="user-mail" id="mail">
-              <label class="modal-text" for="comment">Комментарий</label>
-              <textarea class="modal-input comment" name="user-comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
-              <input type="checkbox" name="contract" id="contract">
-              <label class="checkbox-text" for="contact">Соглашаюсь с рассылкой и принимаю</label>
-              <a href="" target="blank" class="checkbox-link">Условия договора</a>
-              <button type="submit" class="btn-send">Отправить</button>
+              <div class="form-field">
+                <label class="modal-text" for="name">Имя</label>
+                <div class="icon-wrap">
+                  <input class="modal-input" type="text" name="user-name" id="name">
+                  <svg class="input-name-svg" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="modal-text" for="phone">Телефон</label>
+                <div class="icon-wrap">
+                  <input class="modal-input" type="tel" name="telephone" id="phone">
+                  <svg class="input-phone-svg" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="modal-text" for="mail">Почта</label>
+                <div class="icon-wrap">
+                  <input class="modal-input" type="email" name="user-mail" id="mail">
+                   <svg class="input-mail-svg" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                </div>
+                
+              </div>
+              <div class="form-comment">
+                <label class="modal-text" for="comment">Комментарий</label>
+                <textarea class="modal-comment" name="user-comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+              </div>
+              <div class="form-checkbox">
+                <input type="checkbox" class="contract-check visually-hidden" name="contract" id="contract">
+                <label class="checkbox-text" for="contract">
+                  <span class="icon-contract">
+                    <svg class="icon-check" width="11" height="8">
+                      <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <span>Соглашаюсь с рассылкой и принимаю 
+                <a href="" target="blank" class="checkbox-link">Условия договора</a>
+                </span> 
+              </label>
+                <button type="submit" class="btn-send">Отправить</button>
+              </div>
             </form>
           </div>
         </div>
