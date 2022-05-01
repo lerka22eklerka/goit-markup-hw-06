@@ -657,10 +657,20 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .finish-icon {
   fill: #000000;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.finish-icon:hover, .finish-icon:focus {
+  fill: #2196f3;
+  
 }
 
 .subscribe-btn {
@@ -818,6 +828,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 } 
 
 .checkbox-text .icon-contract {
@@ -829,7 +840,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+.icon-contract:hover, .icon-contract:focus {
+  border: 2px solid #2196f3;
 }
 
 .checkbox-link {
@@ -872,8 +890,11 @@ img {
   width: 200px;
   cursor: pointer;
   margin-top: 30px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-
-     
- 
+.btn-send:hover, .btn-send:focus {
+  background-color: #188CE8;
 }
