@@ -663,19 +663,22 @@ img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-.finish-icon {
-  fill: #000000;
+  color: #2196f3;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.finish-icon:hover,
-.finish-icon:focus {
-  fill: #2196f3;
+.finish-icon {
+  fill: #000000;
+  
 }
+
+.finish:focus .finish-icon,
+ .finish:hover .finish-icon {
+  fill: currentColor;
+}
+
 
 .subscribe-btn {
   background-color: #2196f3;
