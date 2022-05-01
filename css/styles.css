@@ -664,15 +664,16 @@ img {
   justify-content: center;
   cursor: pointer;
   color: #2196f3;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .finish-icon {
   fill: #000000;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 }
+
 
 .finish:focus .finish-icon,
  .finish:hover .finish-icon {
@@ -867,7 +868,8 @@ img {
   fill: #ffffff;
 }
 
-.contract-check:focus + .checkbox-text .icon-contract , .contract-check:hover + .checkbox-text .icon-contract {
+.contract-check:focus + .checkbox-text .icon-contract,
+ .contract-check:hover + .checkbox-text .icon-contract {
   border: 2px solid #2196f3;
   outline: none;
 }
